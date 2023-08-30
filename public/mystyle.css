@@ -151,3 +151,40 @@ figure.slider figure figcaption {
   font-size: 2rem; padding: .6rem; 
 }
 
+/* Your existing CSS styles here */
+
+/* Styles for the responsive iframe */
+.iframe-container {
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  width: 300px;
+  height: 300px;
+  border: 1px solidrgb(141, 141, 141);
+  border-radius: 5px;
+  background-color: rgb(141, 141, 141);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.iframe-header {
+  
+  padding: 1px;
+  text-align: right;
+}
+
+/* Styles for minimizing the iframe */
+.iframe-container.minimized {
+  width: 25px;
+  height: 0px;
+  padding-right: 195px;
+  
+
+  margin-right: 100px;
+  box-shadow: none;
+}
+
+.iframe-container.minimized .iframe-header {
+ display: inline;
+}
+

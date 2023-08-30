@@ -46,3 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+function toggleIframe() {
+  const iframeContainer = document.getElementById('iframeContainer');
+  iframeContainer.classList.toggle('minimized');
+}
